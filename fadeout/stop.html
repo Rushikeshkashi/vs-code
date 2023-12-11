@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Slide</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#vk").click(function(){
+                $("#dk").slideToggle(4000);
+
+            });
+            $("#br1").click(function(){
+                $("#dk").stop();
+            });
+
+
+        });
+    </script>
+    <style>
+        .mode1{
+            padding:5px;
+            background-color:brown;
+            height: 10px;
+            text-align: center;
+
+
+        }
+        .mode2{
+            padding:10px;
+            background-color:chartreuse;
+            height: 50px;
+            text-align: center;
+            display:none ;
+        }
+    </style>
+</head>
+<body>
+    <button id="br1">submit</button>
+    <div id="vk"  class="mode1">
+        hello
+    </div>
+    <div id="dk" class="mode2">
+        hii everyone
+    </div>
+    
+    
+</body>
+</html>

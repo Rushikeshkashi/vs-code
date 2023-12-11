@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Prepand</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("p").prepend("<b><u> A positive attitude</u></b>")
+
+            });
+            $("#b2").click(function(){
+                $("ol").prepend("<li>Rushi kashid</li>")
+            });
+            $("#b1").css("background-color","red").css("color","white").css("border-radius","5px");
+            $("#b2").css("background-color","blue").css("color","red").css("border-radius","6px");
+        });
+    </script>
+</head>
+<body>
+    <p>There are two great days in a person’s life</p>
+    <p> Somewhere, someone else is happy with less than you have.</p>
+    <ol>
+        <li>name</li>
+        <li>sir name</li>
+        <li>first name</li>
+    </ol>
+    <button id="b1">Prepand Text</button>
+    <button id="b2">Prepand list</button>
+    
+</body>
+</html>

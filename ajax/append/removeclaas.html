@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").removeClass("bk");
+            });
+
+        });
+    </script>
+    <style>
+        .bk{
+            color: brown;
+            font-size: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bk">hii everyone</h1>
+    <h1 class="bk">Wel-come</h1>
+    <p class="bk">byee!!!</p>
+    <p>There are two great days in a persons life</p>
+    <button>RemoveClass</button>
+    
+</body>
+</html>

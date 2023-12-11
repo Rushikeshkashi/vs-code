@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>fadeToggle</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#r1").fadeToggle();
+                $("#r2").fadeToggle("slow");
+                $("#r3").fadeToggle(2000);
+            });
+            
+
+        });
+
+
+    </script>
+</head>
+<body>
+    <p id="r1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Tempore distinctio, quo vel officiis tenetur libero suscipit,
+         quam aspernatur debitis praesentium possimus doloremque 
+        repudiandae cum voluptate in numquam optio expedita amet?
+    </p >
+    <p id="r2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Soluta amet corporis unde! Tempore nisi doloremque, 
+        nulla est quo, exercitationem labore voluptas magnam assumenda ut unde soluta, 
+        blanditiis placeat architecto cum.
+    </p>
+    <p id="r3" >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Eum praesentium nisi, debitis a ratione voluptates earum ab molestias placeat eius 
+        dolorem nesciunt cupiditate magni molestiae ullam labore minima suscipit fuga?
+    </p>
+    <button id="b1">fadeToggle</button>
+    
+</body>
+</html>

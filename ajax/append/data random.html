@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <p id="br1"></p>
+    <p id="br2"></p>
+    <p id="br3"></p>
+    <p id="br4"></p>
+    <p id="br5"></p>
+    <p id="br6"></p>
+    <p id="br7"></p>
+    <p id="br8"></p>
+    <p id="br9"></p>
+    <p id="br10"></p>
+    <p id="br11"></p>
+    <p id="br12"></p>
+
+
+   
+    <button>Submit Data</button>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.ajax({
+                url: 'https://random-data-api.com/api/v2/users',
+                type:'GET',
+                data:"JSON",
+                dataType:'text',
+                success:successFn,
+				error:errorFn,
+
+            });
+            function successFn(result){
+                console.log(result);
+               var output=JSON.parse(result);
+               
+
+               $("#br1").html("first Name: "+output.first_name);
+               $("#br2").html("last Name: "+output.last_name);
+               $("#br3").html("username: "+output.username);
+               $("#br4").html("password: "+output.password);
+               $("#br5").html("email: "+output.email);
+               $("#br6").html("gender: "+output.gender);
+               $("#br7").html("phone No.: "+output.phone_number);
+               $("#br8").html("d.o.b: "+output.date_of_birth);
+               $("#br9").html("employment:"+output.employment.title+" , "+"keyskill: "+output.employment.key_skill);
+               $("#br10").html("address:"+output.address.city+" , "+"street name: "+output.address.street_name+" , "+"street address:"+output.address.street_address);
+               $("#br11").html("cc_number:"+output.credit_card.cc_number+" , ");
+               $("#br12").html("plan:"+output.subscription.plan+" , "+"status: "+output.subscription.status+" , "+"payment method:"+output.subscription.payment_method);
+               
+            }
+            function errorFn(xhr,status,str){
+                console.log("Inside Error");
+                console.log(xhr);
+                console.log(status);
+                console.log(str);
+            }
+        });
+    });
+
+</script>
+
+</html>

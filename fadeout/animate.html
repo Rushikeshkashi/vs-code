@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var element = $("div");
+					element.animate({
+					height: "300px",
+					width: "300px",
+					fontSize: "28px",
+					opacity: '0.5',
+
+                    });
+            });
+        });
+    </script>
+    <style>
+        div{
+
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button>submit</button>
+    <p>this is example of animation</p>
+    <div>This is animation</div>
+</body>
+</html>

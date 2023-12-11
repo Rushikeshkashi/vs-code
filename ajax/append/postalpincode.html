@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1>Indian Post Office</h1>
+    <p id="pr1"></p>
+    <p id="pr2"></p>
+   <p id="pr3"></p>
+   <p id="pr4"></p>
+   <p id="pr5"></p>
+   <p id="pr6"></p>
+   <p id="pr7"></p>
+   <p id="pr8"></p>
+   <p id="pr9"></p>
+   <p id="pr9"></p>
+   <p id="pr10"></p>
+   <p id="pr11"></p>
+   <p id="pr12"></p>
+   <p id="pr13"></p>
+   
+
+    <button >Submit Data</button>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.ajax({
+                url: 'https://api.postalpincode.in/postoffice/Parunde',
+                type:'GET',
+                data:'JSON',
+               dataType:'text',
+                success:successFn,
+				error:errorFn,
+
+            });
+            function successFn(result){
+                console.log(result);
+              var output=JSON.parse(result);
+
+
+                $("#pr1").html("Message: "+output[0].Message);
+                $("#pr2").html("Status: "+output[0].Status);
+                $("#pr3").html("PostOffice: "+output[0].PostOffice[0].Name);
+                $("#pr4").html("Description: "+output[0].PostOffice[0].Description);
+                $("#pr5").html("BranchType: "+output[0].PostOffice[0].BranchType);
+                $("#pr6").html("Deliverystaus: "+output[0].PostOffice[0].DeliveryStatus);
+                $("#pr7").html("Circle: "+output[0].PostOffice[0].Circle);
+                $("#pr8").html("District: "+output[0].PostOffice[0].District);
+                $("#pr9").html("Division: "+output[0].PostOffice[0].Division);
+                $("#pr10").html("Region: "+output[0].PostOffice[0].Region);
+                $("#pr11").html("State: "+output[0].PostOffice[0].State);
+                $("#pr12").html("Country: "+output[0].PostOffice[0].Country);
+                $("#pr13").html("Pincode: "+output[0].PostOffice[0].Pincode);
+            }
+            function errorFn(xhr,status,str){
+                console.log(" Error");
+                console.log(xhr);
+                console.log(status);
+                console.log(str);
+            }
+        });
+    });
+
+</script>
+
+</html>

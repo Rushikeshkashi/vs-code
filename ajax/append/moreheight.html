@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#nk").width(300).height(300);
+            });
+        });
+    </script>
+    <style>
+        #nk {
+            height: 100px;
+            width:200px;
+            padding: 20px;
+            margin: 5px;
+            border: 2px solid black;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="nk"></div>
+    <button>clik here</button>
+    
+</body>
+</html>

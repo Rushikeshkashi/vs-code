@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var text=" ";
+                txt +="width of div: " + $("#d1").width() + "<br>";
+                txt +="width of div: " + $("#d1").height();
+                $("#d1").html(txt);
+            });
+        });
+    </script>
+    <style>
+        #d1{
+            height:200px ;
+            width: 300px;
+            padding:20px ;
+            margin: 5px;
+            border:2px solid blue ;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <br>
+    <button>click</button>
+
+    <p>width</p>
+    <p>height</p>
+
+    
+</body>
+</html>

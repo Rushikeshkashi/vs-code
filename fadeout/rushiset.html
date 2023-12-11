@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>set</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#b1").text("rushi");
+
+            });
+            $("#button2").click(function(){
+                    $("#b2").html("<b>hello rushi</b>");
+        });
+            $("#button3").click(function(){
+
+                $("#b").val("brother");
+            });
+            $("#button4").click(function(){
+
+                $("#a1").attr("href","www.facebook.comFacebook");
+            });
+
+
+    });
+
+
+
+    </script>
+</head>
+<body>
+    <h1>information</h1>
+    <p id="b1">rushi name</p>
+    <p id="b2">my name</p>
+    <p id="b3">suraj</p>
+    <p>nagesh:<input type="text" id="b" name="name" value="Welcome!"></p>
+    <p ><a href="www.flipkart.com" id="a1">flipcart</a></p>
+    <button id="button1">set text</button>
+    <button id="button2">set html</button>
+   <button id="button3">set value</button>
+   <button id="button4">set attribute</button>
+</body>
+</html>

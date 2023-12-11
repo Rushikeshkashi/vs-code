@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Regisration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <form action="" method="post">
+    
+    <div class="container-fluid p-2  bg-danger text-white text-center border border-danger">
+      <marquee><h3>WELCOME TO STUDENT DESK</h3></marquee>
+    </div>
+    <div class="container-fluid   bg-secondary text-white text-center">
+        &lArr;Student Information Form &rArr;
+     </div>
+     
+     <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 p-1 bg-success text-white text-center col-lg-12 col-md-12 col-sm-12 ">
+        <h5>&bullet;Student Personal Details&bullet;</h5>
+        </div>
+        </div>
+        </div>
+         
+    <div class="container-fluid text-center bg-primary border border-info">
+        <div class="row">
+            <div class="col-4 lg-6 bg-info  col-lg-4 col-md-4 col-sm-4">
+              <div>
+                <label>First Name:</label><br>
+                <input type="text" id="rk1" class="text-secondary"  placeholder="Enter Name">
+                <p id="bk1"></p>
+              </div> 
+            </div>
+            <div class="col-4 lg-6 bg-info  col-lg-4 col-md-4 col-sm-4">
+                <label>Middle Name:</label><br>
+                <input type="text" id="rk2"  placeholder="Enter Name">
+                <p id="bk2"></p>
+
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>last Name:</label><br>
+                <input type="text" id="rk3" placeholder="Enter Name">
+                <p id="bk3"></p>
+
+            </div><br>
+        </div>
+        <div class="row">
+            <div class="col-4 lg-6 bg-info">
+              <div>
+                <label>Email Id:</label><br>
+                <input type="text" id="rk4" placeholder="Enter Email Id ">
+                <p id="bk4"></p>
+
+              </div> 
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>Mobile Number:</label><br>
+                <input type="text" id="rk5" placeholder="Enter Number">
+                <p id="bk5"></p>
+
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>D.O.B</label><br>
+                <input id="rk6" type="date">
+                <p id="bk6"></p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 lg-6 bg-info">
+              <div>
+                <label>Gender:</label><br>
+                <input id="male1" type="radio"  name="Gender"  value="male">Male 
+                <input id="female2" type="radio"  name="Gender" value="female"  >Female 
+                <p id="gender2"></p>
+              </div> 
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>Blood Group</label><br>
+                <select id="vk" name="blood Group">
+                    <option></option>
+                    <option>A<sup>+</sup></option>
+                    <option>B<sup>+</sup></option>
+                    <option>O<sup>+</sup></option>
+                    <option>AB<sup>+</sup></option>
+                    <option>O<sup>-</sup></option>
+                    </select>
+                    <p id="dk"></p>
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>Time</label><br>
+                <input id="rk7" type="time">
+                <p id="bk7"></p>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid p-1  bg-success text-white text-center">
+        <h5>&bullet;Student Parents Details&bullet;</h5>
+        </div>
+         
+     <div class="container-fluid text-center bg-primary ">
+        <div class="row p-0">
+            <div class="col-4 lg-6 bg-info">
+              <div>
+                <label>Father Name:</label><br>
+                <input type="text" id="rk8" placeholder="Enter Name">
+                <p id="bk8"></p>
+              </div> 
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>Father Occupation:</label><br>
+                <input type="text" id="rk9" placeholder="Enter  Occupation">
+                <p id="bk9"></p>
+
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>Father Mobile Number:</label><br>
+                <input type="number" id="rk10" placeholder="Enter Number">
+                <p id="bk10"></p>
+
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col-4 lg-6 bg-info">
+              <div>
+                <label>Mother Name:</label><br>
+                <input type="text" id="rk11"  placeholder="Enter Name">
+                <p id="bk11"></p>
+              </div> 
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>Mother Occupation:</label><br>
+                <input type="text" id="rk12"  placeholder="Enter  Occupation">
+                <p id="bk12"></p>
+
+            </div>
+            <div class="col-4 lg-6 bg-info">
+                <label>Mother Mobile Number:</label><br>
+                <input type="number" id="rk13" placeholder="Enter Number">
+                <p id="bk13"></p>
+
+            </div>
+            </div>
+            </div>
+            <div class="container-fluidn p-1  bg-success text-white text-center">
+                <h5>&bullet;Student Permant Address&bullet;</h5>
+                </div>
+                <div class="container-fluid text-center bg-primary ">
+                    <div class="row p-0">
+                        <div class="col-4 lg-6 bg-info">
+                          <div>
+                            <label>Permant Address:</label><br>
+                            <input type="text" id="rk14"  placeholder="Enter address">
+                            <p id="bk14"></p>
+                          </div> 
+                        </div>
+                        <div class="col-4 lg-6 bg-info">
+                            <label>Town City:</label><br>
+                            <input type="text" id="rk15"  placeholder="Enter Town City">
+                            <p id="bk15"></p>
+            
+                        </div>
+                        <div class="col-4 lg-6 bg-info">
+                            <label>Tal:</label><br>
+                            <input type="text" id="rk16" placeholder=" Enter Tal">
+                            <p id="bk16"></p>
+            
+                        </div>
+                    </div>
+                    <div class="row p-0">
+                        <div class="col-4 lg-6 bg-info">
+                          <div>
+                            <label>Dist:</label><br>
+                            <input type="text" id="rk17"  placeholder="Enter Dist">
+                            <p id="bk17"></p>
+                          </div> 
+                        </div>
+                        <div class="col-4 lg-6 bg-info">
+                            <label>Pin Code:</label><br>
+                            <input type="text" id="rk18"  placeholder="Enter Pin code">
+                            <p id="bk18"></p>
+            
+                        </div>
+                        <div class="col-4 lg-6 bg-info">
+                            <label>State:</label><br>
+                            <select id="rk19" >
+                                <option></option>
+                                <option>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Chhattisgarh</option>
+                                <option>Goa</option>
+                                <option>Gujarat</option>
+                                <option>Haryana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Jharkhand</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Maharashtra</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Mizoram</option>
+                                <option>Nagaland</option>
+                                <option>Odisha</option>
+                                <option>Punjab</option>
+                                <option>Rajasthan</option>
+                                <option>Sikkim</option>
+                                <option>Tamil Nadu</option>
+                                <option>Telangana</option>
+                                <option>Tripura</option>
+                                <option>Uttar Pradesh</option>
+                                <option>Uttarakhand</option>
+                                <option>West Bengal</option>
+                                </select>
+                                <p id="bk19"></p>
+            
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="container-fluidn p-1   bg-success text-white text-center">
+                            <h5>&bullet;Student Current Address&bullet;</h5>
+                            </div>
+                            <div class="container-fluid text-center bg-primary ">
+                                <div class="row p-0">
+                                    <div class="col-4 lg-6 bg-info">
+                                      <div>
+                                        <label>Current Address:</label><br>
+                                        <input type="text" id="rk20" placeholder="Enter address">
+                                        <p id="bk20"></p>
+                                      </div> 
+                                    </div>
+                                    <div class="col-4 lg-6 bg-info">
+                                        <label>Town City:</label><br>
+                                        <input type="text" id="rk21" placeholder="Enter Town City">
+                                        <p id="bk21"></p>
+                        
+                                    </div>
+                                    <div class="col-4 lg-6 bg-info">
+                                        <label>Tal:</label><br>
+                                        <input type="text" id="rk22" placeholder=" Enter Tal">
+                                        <p id="bk22"></p>
+                        
+                                    </div>
+                                </div>
+                                <div class="row p-0">
+                                    <div class="col-4 lg-6 bg-info">
+                                      <div>
+                                        <label>Dist:</label><br>
+                                        <input type="text" id="rk23"  placeholder="Enter Dist">
+                                        <p id="bk23"></p>
+                                      </div> 
+                                    </div>
+                                    <div class="col-4 lg-6 bg-info">
+                                        <label>Pin Code:</label><br>
+                                        <input type="text" id="rk24" placeholder="Enter Pin code">
+                                        <p id="bk24"></p>
+                        
+                                    </div>
+                                    <div class="col-4 lg-6 bg-info">
+                                        <label>State:</label><br>
+                                        <select id="rk25" >
+                                            <option></option>
+                                            <option>Andhra Pradesh</option>
+                                            <option>Arunachal Pradesh</option>
+                                            <option>Assam</option>
+                                            <option>Bihar</option>
+                                            <option>Chhattisgarh</option>
+                                            <option>Goa</option>
+                                            <option>Gujarat</option>
+                                            <option>Haryana</option>
+                                            <option>Himachal Pradesh</option>
+                                            <option>Jharkhand</option>
+                                            <option>Karnataka</option>
+                                            <option>Kerala</option>
+                                            <option>Madhya Pradesh</option>
+                                            <option>Maharashtra</option>
+                                            <option>Manipur</option>
+                                            <option>Meghalaya</option>
+                                            <option>Mizoram</option>
+                                            <option>Nagaland</option>
+                                            <option>Odisha</option>
+                                            <option>Punjab</option>
+                                            <option>Rajasthan</option>
+                                            <option>Sikkim</option>
+                                            <option>Tamil Nadu</option>
+                                            <option>Telangana</option>
+                                            <option>Tripura</option>
+                                            <option>Uttar Pradesh</option>
+                                            <option>Uttarakhand</option>
+                                            <option>West Bengal</option>
+                                            </select>
+                                            <p id="bk25"></p>
+                        
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="container-fluidn p-1  bg-success text-white text-center">
+                                        <h5>&bullet;Student Admission Details&bullet;</h5>
+                                        </div>
+                                         
+                                     <div class="container-fluid text-center bg-primary ">
+                                        <div class="row p-0">
+                                            <div class="col-4 lg-6 bg-info">
+                                              <div>
+                                                <label>Department:</label><br>
+                                                <input type="text" id="rk26"  placeholder="Enter Department">
+                                                <p id="bk26"></p>
+                                              </div> 
+                                            </div>
+                                            <div class="col-4 lg-6 bg-info">
+                                                <label>Date of Admission:</label><br>
+                                                <input id="rk27" type="date" >
+                                                <p id="bk27"></p>
+                                
+                                            </div>
+                                            <div class="col-4 lg-6 bg-info">
+                                                <label>Date of Leaving:</label><br>
+                                                <input id="rk28" type="date">
+                                                <p id="bk28"></p>
+                                
+                                            </div>
+                                        </div>
+                                        <div class="row p-0">
+                                            <div class="col-4 lg-6 bg-info">
+                                              <div>
+                                                <label>Course Completion Year:</label><br>
+                                                <input type="number" id="rk29" placeholder="Enter Year">
+                                                <p id="bk29"></p>
+                                              </div> 
+                                            </div>
+                                            <div class="col-4 lg-6 bg-info">
+                                                <label>Fee Paid:</label><br>
+                                                <input type="number" id="rk30"  placeholder="Enter fee">
+                                                <p id="bk30"></p>
+                                
+                                            </div>
+                                            <div class="col-4 lg-6 bg-info">
+                                                <label>Account Number:</label><br>
+                                                <input type="number" id="rk31" placeholder="Enter Number">
+                                                <p id="bk31"></p>
+                                               
+
+                                            </div>
+                                          </div>
+                                          
+                                          <div class=" bg-primary text-center">
+                                                 
+                                                 <button onclick="changeMe()"  class="btn btn-success">submit</button>
+                                                 
+                                             </div>
+                                          
+                                            </div>
+                                            </div>
+            </form>                             
+    <script>
+      function changeMe(){
+    button=document.getElementById("rk1").value;
+
+   if (button==""){
+       document.getElementById("bk1").innerHTML="<span style='color:red;'>Error</span>";
+
+       
+   }else{
+       document.getElementById("bk1").innerHTML=button;
+
+}
+button=document.getElementById("rk2").value;
+
+if (button==""){
+    document.getElementById("bk2").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk2").innerHTML=button;
+
+}
+button=document.getElementById("rk3").value;
+
+if (button==""){
+    document.getElementById("bk3").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk3").innerHTML=button;
+
+}
+button=document.getElementById("rk4").value;
+
+if (button==""){
+    document.getElementById("bk4").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk4").innerHTML=button;
+
+}
+button=document.getElementById("rk5").value;
+
+if (button==""){
+    document.getElementById("bk5").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk5").innerHTML=button;
+
+}
+button=document.getElementById("rk6").value;
+
+if (button==""){
+    document.getElementById("bk6").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk6").innerHTML=button;
+
+}
+button=document.getElementById("rk7").value;
+
+if (button==""){
+    document.getElementById("bk7").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk7").innerHTML=button;
+
+}
+button=document.getElementById("rk8").value;
+
+if (button==""){
+    document.getElementById("bk8").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk8").innerHTML=button;
+
+}
+button=document.getElementById("rk9").value;
+
+if (button==""){
+    document.getElementById("bk9").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk9").innerHTML=button;
+
+}
+button=document.getElementById("rk10").value;
+
+if (button==""){
+    document.getElementById("bk10").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk10").innerHTML=button;
+
+}
+button=document.getElementById("rk11").value;
+
+if (button==""){
+    document.getElementById("bk11").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk11").innerHTML=button;
+
+}
+button=document.getElementById("rk12").value;
+
+if (button==""){
+    document.getElementById("bk12").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk12").innerHTML=button;
+
+}
+button=document.getElementById("rk13").value;
+
+if (button==""){
+    document.getElementById("bk13").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk13").innerHTML=button;
+
+}
+button=document.getElementById("rk14").value;
+
+if (button==""){
+    document.getElementById("bk14").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk14").innerHTML=button;
+
+}
+button=document.getElementById("rk15").value;
+
+if (button==""){
+    document.getElementById("bk15").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk15").innerHTML=button;
+
+}
+button=document.getElementById("rk16").value;
+
+if (button==""){
+    document.getElementById("bk16").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk16").innerHTML=button;
+
+}
+button=document.getElementById("rk17").value;
+
+if (button==""){
+    document.getElementById("bk17").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk17").innerHTML=button;
+
+}
+button=document.getElementById("rk18").value;
+
+if (button==""){
+    document.getElementById("bk18").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk18").innerHTML=button;
+
+}
+button=document.getElementById("rk19").value;
+
+if (button==""){
+    document.getElementById("bk19").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk19").innerHTML=button;
+
+}
+button=document.getElementById("rk20").value;
+
+if (button==""){
+    document.getElementById("bk20").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk20").innerHTML=button;
+
+}
+button=document.getElementById("rk21").value;
+
+if (button==""){
+    document.getElementById("bk21").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk21").innerHTML=button;
+
+}
+button=document.getElementById("rk22").value;
+
+if (button==""){
+    document.getElementById("bk22").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk22").innerHTML=button;
+
+}
+button=document.getElementById("rk23").value;
+
+if (button==""){
+    document.getElementById("bk23").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk23").innerHTML=button;
+
+}
+button=document.getElementById("rk24").value;
+
+if (button==""){
+    document.getElementById("bk24").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk24").innerHTML=button;
+
+}
+button=document.getElementById("rk25").value;
+
+if (button==""){
+    document.getElementById("bk25").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk25").innerHTML=button;
+
+}
+button=document.getElementById("rk26").value;
+
+if (button==""){
+    document.getElementById("bk26").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk26").innerHTML=button;
+
+}
+button=document.getElementById("rk27").value;
+
+if (button==""){
+    document.getElementById("bk27").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk27").innerHTML=button;
+
+}
+button=document.getElementById("rk28").value;
+
+if (button==""){
+    document.getElementById("bk28").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk28").innerHTML=button;
+
+}
+button=document.getElementById("rk29").value;
+
+if (button==""){
+    document.getElementById("bk29").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk29").innerHTML=button;
+
+}
+button=document.getElementById("rk30").value;
+
+if (button==""){
+    document.getElementById("bk30").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk30").innerHTML=button;
+
+}
+button=document.getElementById("rk31").value;
+
+if (button==""){
+    document.getElementById("bk31").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("bk31").innerHTML=button;
+
+}
+button=document.getElementById("vk").value;
+
+if (button==""){
+    document.getElementById("dk").innerHTML="<span style='color:red;'>Error</span>";
+
+    
+}else{
+    document.getElementById("dk").innerHTML=button;
+
+}
+if(document.getElementById("male1").checked==true){
+    document.getElementById("gender2").innerHTML="male";
+}
+else if(document.getElementById("female2").checked==true){
+    document.getElementById("gender2").innerHTML="female";
+}
+else{
+    document.getElementById("gender2").innerHTML="<span style='color:red;'>Error</span>";
+}
+}
+document.querySelector('form').addEventListener('submit',function(event){
+    event.preventDefault();
+});
+
+    </script>                  
+     
+    
+     
+   
+     
+  
+    
+</body>
+</html>

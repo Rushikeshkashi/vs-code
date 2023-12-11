@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#Fade1").click(function(){
+                $("#f1").fadeTo(2000,0.2);
+                $("#f2").fadeTo(3000,0.3);
+                $("#f3").fadeTo(1000,0.2);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="f1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Facere ea, quae aliquam expedita, voluptatum placeat sint nihil quos aliquid 
+        optio eum tempore consequuntur.
+         Sit, vero facere? Consequuntur, iste totam! Consequuntur.
+    </p>
+    <p id="f2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Id ad modi quaerat explicabo aliquam deserunt voluptates corrupti ex labore, 
+        possimus consequatur minima enim perspiciatis facere mollitia deleniti
+         recusandae quo distinctio!
+    </p>
+    <p id="f3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos temporibus, 
+        consequatur laboriosam at similique illum voluptatibus consectetur iure repudiandae vitae cumque expedita 
+        omnis asperiores aliquam ipsa officiis facere tempora maxime!
+    </p>
+    <button id="Fade1">fadeTo</button>
+</body>
+</html>

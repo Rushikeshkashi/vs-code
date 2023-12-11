@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* .form_box[type="submit"]:hover{
+            background: #000;
+        } */
+        #error{
+            display: block;
+            /* font-weight: 700; */
+            /* font-size: 14px; */
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form name="custom_form">
+        
+        <input id="input" name="name" placeholder="Name">
+
+        <button class="form_box" onclick="change()">Submit</button>
+
+        <span id="error">Please Enter Correct Name</span>
+
+        <p id="parra"></p>
+    </form>
+    <script type="text/javascript">
+
+        function change(){
+
+            var name = document.custom_form.name;
+            name = document.getElementById("input").value;
+            if(name.value == ""){
+                name.nextElementSibling.style.display = "block";
+                name.style.border = "1px solid #f00";
+                return false
+            }else{
+                name.nextElementSibling.style.display = "none";
+                name.style.border = "1px solid transparent"
+            }
+
+        }
+        document.getElementById("parra").innerHTML = name;
+    </script>
+
+</body>
+</html>

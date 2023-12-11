@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1 id="bk1"></h1>
+   
+    <button >Submit Data</button>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.ajax({
+                url: 'https://aztro.sameerkumar.website?sign=aries&day=today',
+                type:'GET',
+                data:'JSON',
+               dataType:'text',
+                success:successFn,
+				error:errorFn,
+
+            });
+            function successFn(result){
+                console.log(result);
+              var output=JSON.parse(result);
+
+
+                 $("#br1").val("rushi:",output.data);
+            }
+            function errorFn(xhr,status,str){
+                console.log(" Error");
+                console.log(xhr);
+                console.log(status);
+                console.log(str);
+            }
+        });
+    });
+
+</script>
+
+</html>

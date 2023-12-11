@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Before  After</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("img").before("wel-come");
+            });
+            $("#btn2").click(function(){
+                $("img").after("Byee..everyone");
+                $("#btn1").css("background-color","red")
+                $("#btn2").css("background-color","yellow")
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <img src="orange.jpg"  height="200px" width="200px" >
+    <br>
+    <br>
+    <button id="btn1">Before</button>
+    <button id="btn2">After</button>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cssclass</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").addClass("css");
+                $("div").addClass("model");
+                $("button").addClass("model2");
+            });
+        });
+    </script>
+    <style>
+        .css{
+            color: blue;
+            font-size: 5px;
+            font-weight: bolder;
+        }
+        .model{
+            color: blueviolet;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .model2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>rushikesh</h1>
+    <h2>kashid</h2>
+
+    <p>Thought for the day about difficulties</p>
+    <div>Wel-come!!</div>
+    <br>
+    <button >Add class</button>
+    
+</body>
+</html>

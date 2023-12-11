@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fade</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#rk").fadeIn();
+                $("#bk").fadeIn("slow");
+                $("#vk").fadeIn(2000);
+            });
+
+            $("#button2").click(function(){
+                $("#rk").fadeOut();
+                $("#bk").fadeOut("slow");
+                $("#vk").fadeOut(2000);
+
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+    <p id="rk" style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Qui hic, ipsam veritatis cupiditate accusamus numquam 
+        doloribus nulla incidunt autem beatae. Officiis eos maxime atque hic sunt natus consequatur id odit!</p>
+    <p id="bk" style="color: orange;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+           Molestias odio ipsam debitis consequatur minima numquam labore voluptatibus, 
+          laborum odit sapiente nihil iste facere culpa assumenda. Quae modi suscipit at laborum?</p>
+     <p id="vk" style="color: blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo recusandae eveniet impedit reiciendis
+         dolorem esse nam doloremque dolores? Quod voluptatibus,
+         autem quam quaerat numquam ex corporis quibusdam provident</p>  
+         <button id="button1">Fade In</button>  
+         <button id="button2">Fade Out</button> 
+    
+</body>
+</html>

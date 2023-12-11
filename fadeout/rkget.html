@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>rkget</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                console.log("Text: " +$("#hr1").text());
+            });
+            $("#b2").click(function(){
+                console.log("Html: " +$("#hr2").html());
+
+            });
+            $("#b3").click(function(){
+                console.log("Value: " +$("#hr3").val());
+            });
+            $("#b4").click(function(){
+
+                console.log($("#cricbuzz").attr("href"));
+			});
+            });
+            
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Get</h1>
+    <p id="hr1">hello rushi</b></p>
+    <p id="hr2">hii suraj<b>welcome </b>yyy</p>
+    <p >Nagesh:<input type="text" name="name" id="hr3" value="suraj"></p>
+    <p><a href="www.cricbuzz.com" id="cricbuzz">cricbuzz</a></p>
+
+    <button id="b1" >text</button>
+    <button id="b2">html</button>
+    <button id="b3">value</button>
+    <button id="b4">attribute</button>
+
+
+
+    
+</body>
+</html>

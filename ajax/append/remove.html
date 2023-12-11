@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Remove</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#model").remove();
+            });
+            $("#b2").click(function(){
+                $("#model").empty();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="model" style="height: 100px; width: 300px; border-radius: 2px solid black; background-color: chocolate;">
+        remove itam
+    <p>Always bear in mind that your own resolution </p>
+    <p>Even if you ve messed up</p>
+    </div>
+    <button id="b1">Remove</button>
+    <button id="b2">Empty</button>
+    
+</body>
+</html>
